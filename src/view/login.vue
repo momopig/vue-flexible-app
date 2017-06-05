@@ -95,7 +95,7 @@
       background-size: 100px auto;
       width: 100px;
       height: 100px;
-      margin-top: 62px;
+      margin-top: 124px;
     }
     .username-input, .pass-input{
       box-sizing: border-box;
@@ -106,7 +106,7 @@
       font-size: 14px;
     }
     .username-input{
-      margin-top: 110px;
+      margin-top: 40px;
     }
     .pass-input{
       margin-top: 20px;

@@ -2,7 +2,7 @@
 # Demo
 ![scan the qr code](https://rawgit.com/momopig/vue-flexible-app/master/qrCode.png)
 
-[演示地址](https://momopig.github.io/#/nav-1-list)
+[演示地址](https://momopig.github.io/#/)
 
 
 # Description(基础架构简介)
