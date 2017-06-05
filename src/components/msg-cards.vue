@@ -100,6 +100,7 @@
   }
 </script>
 <style lang="scss">
+  @import "../assets/css/var.scss";
   .msg-items {
     position: absolute;
     z-index: 1;
@@ -140,7 +141,7 @@
         background: #F0F0F0;
         padding: 6px 9px;
         border-radius: 100px;
-        color: #2178D4;
+        color: $topicColor;
         font-size: 12px;
       }
       .right-part {

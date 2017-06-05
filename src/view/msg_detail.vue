@@ -86,6 +86,7 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../assets/css/var.scss";
   .msg-list-page{
     background: #fff;
     .msg-detail-board{
@@ -111,7 +112,7 @@
           }
           .origin{
             >a{
-              color: #2178D4;
+              color: $topicColor;
             }
           }
         }

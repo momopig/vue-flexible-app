@@ -73,11 +73,12 @@
 </script>
 
 <style scoped lang="scss">
-    .account-detail-page{
+  @import "../assets/css/var.scss";
+  .account-detail-page{
         background: #F7F7F7;
         height: 100%;
         .header-area {
-            background: #2178D4;
+            background: $topicColor;
 
             .header-body{
                 display: flex;

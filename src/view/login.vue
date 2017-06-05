@@ -70,6 +70,7 @@
 </script>
 
 <style scoped lang="scss" rel="stylesheet/scss">
+  @import "../assets/css/var.scss";
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:  #BDBDBD;
   }
@@ -120,7 +121,7 @@
     .login-btn{
       display: inline-block;
       box-sizing: border-box;
-      background: #2178D4;
+      background: $topicColor;
       width: 169px;
       height: 42px;
       line-height: 42px;

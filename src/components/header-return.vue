@@ -16,9 +16,10 @@
   }
 </script>
 <style scoped lang="scss">
+  @import "../assets/css/var.scss";
   .header-bar {
     position: relative;
-    background: #2178D4;
+    background: $topicColor;
     line-height: 44px;
     font-size: 18px;
     color: #fff;

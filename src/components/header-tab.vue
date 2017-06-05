@@ -39,11 +39,12 @@
   }
 </script>
 <style  lang="scss">
-    .parent-tabs-area{
+  @import "../assets/css/var.scss";
+  .parent-tabs-area{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #2178D4;
+        background: $topicColor;
         height: 45px;
         padding: 0 12px;
         .link-btn{
@@ -108,7 +109,7 @@
             }
 
           &.active{
-            color: #2178D4;
+            color: $topicColor;
             &:after {
               position: absolute;
               bottom: 0;
@@ -116,7 +117,7 @@
               content: '';
               width: 100%;
               height: 3px;
-              background: #2178D4;
+              background: $topicColor;
 
             }
           }
