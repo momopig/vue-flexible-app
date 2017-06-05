@@ -1,7 +1,7 @@
 /**
  * Created by Jamter on 17/5/20.
  */
-var login = function (username, password, resolveCallback, rejectCallback) {
+let login = function (username, password, resolveCallback, rejectCallback) {
   fetch('/api/account/login.json', {
     method: 'POST',
     headers: {
@@ -18,7 +18,7 @@ var login = function (username, password, resolveCallback, rejectCallback) {
   })
 }
 
-var getProfile = function (resolveCallback, rejectCallback) {
+let getProfile = function (resolveCallback, rejectCallback) {
   fetch('/api/account/profile.json', {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('access_token')

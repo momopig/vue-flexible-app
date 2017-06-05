@@ -34,7 +34,7 @@
     },
     methods: {
       initPageData () {
-        var self = this
+        let self = this
         MsgService.getMsgList(self.searchKeys, function (data) {
           if (data.status === 0) {
             self.msgs = data.data.data
@@ -44,7 +44,7 @@
         })
       },
       getNextPageData () {
-        var self = this
+        let self = this
         self.searchKeys.offset += self.searchKeys.count
         MsgService.getMsgList(self.searchKeys, function (data) {
           if (data.status === 0) {

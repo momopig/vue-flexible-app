@@ -13,8 +13,8 @@
 //  import AccountService from '../assets/js/fetch_service/account.js'
   export default{
     data () {
-      var username
-      var password
+      let username
+      let password
       return {
         username: username,
         password: password
@@ -22,7 +22,7 @@
     },
     methods: {
       login () {
-//        var self = this
+//        let self = this
 //        AccountService.login(self.username, self.password, function (data) {
 //          if (data.status === 0) {
 //            localStorage.setItem('access_token', data.data.access_token)
@@ -41,7 +41,7 @@
 //          }
 //          window.location.href = '/#/risk-msg-list'
 //        })
-        var data = {
+        let data = {
           status: 0,
           msg: 'login success',
           data: {

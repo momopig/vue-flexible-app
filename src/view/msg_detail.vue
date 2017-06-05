@@ -61,13 +61,13 @@
     },
     methods: {
       getMsgDetail () {
-        var self = this
+        let self = this
 //        MsgService.getMsgDetail(self.msgId, function (data) {
 //          if (data.status === 0) {
 //            self.detailObj = data.data
 //          }
 //        })
-        var data = {
+        let data = {
           status: 0,
           msg: 'success',
           data: {

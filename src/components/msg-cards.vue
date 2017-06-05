@@ -26,7 +26,7 @@
       this.refresh()
     },
     data () {
-      var loadStatus = ''
+      let loadStatus = ''
       if (this.msgs.length < this.totalCount) {
         loadStatus = 'canLoad'
       } else {
@@ -45,7 +45,7 @@
     },
     watch: {
       msgs: function (newVal, oldVal) {
-        var self = this
+        let self = this
         if (self.msgs.length < self.totalCount) {
           self.loadStatus = 'canLoad'
         } else {
@@ -55,12 +55,12 @@
     },
     methods: {
       refresh () {
-        var self = this
+        let self = this
         self.$refs.scrollView.refresh()
       },
       scrolling () {
-        var self = this
-        var iscroll = self.$refs.scrollView.iscroll
+        let self = this
+        let iscroll = self.$refs.scrollView.iscroll
         if (self.msgs.length < self.totalCount) {
           if (Math.abs(iscroll.y) - Math.abs(iscroll.maxScrollY) > 10) {
             self.loadStatus = 'willLoad'
@@ -72,7 +72,7 @@
         }
       },
       scrollEnd () {
-        var self = this
+        let self = this
         if (self.msgs.length < self.totalCount) {
           if (self.loadStatus === 'willLoad') {
             self.loadStatus = 'loading'
@@ -85,8 +85,8 @@
         }
       },
       setCollect (item) {
-        var ids = []
-        var collect = !item.collected
+        let ids = []
+        let collect = !item.collected
         ids.push(item.id)
         if (collect) {
           Toast('收藏成功')

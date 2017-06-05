@@ -2,7 +2,7 @@
  * Created by Jamter on 17/5/20.
  */
 
-var getMsgList = function (searchKeys, resolveCallback, rejectCallback) {
+let getMsgList = function (searchKeys, resolveCallback, rejectCallback) {
   fetch('/api/notification/msgs?' + window.fn.getQueryString(searchKeys), {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('access_token')
@@ -12,7 +12,7 @@ var getMsgList = function (searchKeys, resolveCallback, rejectCallback) {
   }).then(resolveCallback, rejectCallback).catch(function (e) {
   })
 }
-var getNotReadNums = function (type, resolveCallback, rejectCallback) {
+let getNotReadNums = function (type, resolveCallback, rejectCallback) {
   fetch('/api/notification/not_read_nums?type=' + type, {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('access_token')
@@ -22,7 +22,7 @@ var getNotReadNums = function (type, resolveCallback, rejectCallback) {
   }).then(resolveCallback, rejectCallback).catch(function (e) {
   })
 }
-var getMsgDetail = function (msgId, resolveCallback, rejectCallback) {
+let getMsgDetail = function (msgId, resolveCallback, rejectCallback) {
   fetch('/api/notification/msg_detail?id=' + msgId, {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('access_token')

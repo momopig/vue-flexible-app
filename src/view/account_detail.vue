@@ -23,7 +23,6 @@
 
 <script>
   import headerReturn from '../components/header-return.vue'
-//  import Toast from 'vue-toast-mobile'
   import { Toast } from 'mint-ui'
 //  import AccountService from '../assets/js/fetch_service/account.js'
   export default{
@@ -40,13 +39,13 @@
     },
     methods: {
       getProfile () {
-        var self = this
+        let self = this
 //        AccountService.getProfile(function (data) {
 //          if (data.status === 0) {
 //            window.currentUser = self.currentUser = data.data
 //          }
 //        })
-        var data = {
+        let data = {
           status: 0,
           msg: 'success',
           data: {

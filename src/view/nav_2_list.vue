@@ -1,5 +1,5 @@
 <template>
-  <div class="risk-list-page">
+  <div class="marketing-list-page">
     <header-tab :config="tabConfig" :selectSubTypeFn="selectSubType"  v-if="loadTabs"></header-tab>
     <msg-cards :msgs="msgs" :getNextPageData="getNextPageData" :totalCount="totalCount"></msg-cards>
   </div>
@@ -14,11 +14,11 @@
       headerTab,
       msgCards
     },
-    created: function () {
+    created () {
       this.initPageData()
     },
     computed: {
-      type: function () {
+      type () {
         return '(' + this.tabConfig.parent.arr[this.tabConfig.parent.activeIndex].name + ':' +
           this.tabConfig.sub.arr[this.tabConfig.sub.activeIndex].cn_name + ')'
       }
@@ -56,14 +56,14 @@
     },
     methods: {
       initPageData () {
-        var self = this
+        let self = this
 //          MsgService.getMsgList(self.searchKeys, function (data) {
 //            if (data.status === 0) {
 //              self.msgs = data.data.data
 //              self.totalCount = data.data.total_count
 //            }
 //          })
-        var data1 = {
+        let data1 = {
           status: 0,
           msg: 'success',
           data: {
@@ -91,7 +91,7 @@
 //              })
 //            }
 //          })
-        var data2 = {
+        let data2 = {
           status: 0,
           msg: 'success',
           data: {
@@ -115,7 +115,7 @@
         }
       },
       getNextPageData () {
-        var self = this
+        let self = this
         self.searchKeys.offset += self.searchKeys.count
 //          MsgService.getMsgList(self.searchKeys, function (data) {
 //            if (data.status === 0) {
@@ -124,13 +124,13 @@
 //            }
 //          })
         setTimeout(function () {
-          for (var i = 0; i < self.searchKeys.count; i++) {
+          for (let i = 0; i < self.searchKeys.count; i++) {
             self.msgs.push({company: '商品简介' + self.type, id: 1, push_time: 1495036800000, title: '商品名称' + (self.msgs.length + 1), type_cn_name: '优质'})
           }
         }, 1500)
       },
       selectSubType (subType) {
-        var self = this
+        let self = this
         self.searchKeys.sub_type = subType
         self.searchKeys.offset = 0
         self.initPageData()
@@ -140,6 +140,6 @@
 </script>
 
 <style scoped lang="scss">
-  .risk-list-page{
+  .marketing-list-page{
   }
 </style>
