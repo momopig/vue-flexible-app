@@ -1,6 +1,8 @@
-
 # Demo
+![scan the qr code](https://rawgit.com/momopig/vue-flexible-app/master/qrCode.png)
+
 [演示地址](https://momopig.github.io/#/nav-1-list)
+
 
 # Description(基础架构简介)
 本项目是基于vue开发的一个简易app，基础框架采用vue-cli 2.x版本，css预处理器使用的sass(scss)。与此同时，本项目还集成了如下前端类库和框架:
@@ -31,5 +33,5 @@ Fetch api是新一代异步获取网络数据的js接口，在易用性和功能
 * npm run build
 
 # End
-由于本人水平有限，如在使用中如发现有任何问题或有更好的建议，欢迎及时与我联系。
+由于本人水平有限，如在使用中如发现有任何问题或更好的建议，欢迎及时与我联系。
 
