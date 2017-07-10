@@ -5,6 +5,9 @@
         <div class="msg-item" >
           <a class="title" v-html="item.title" :href="'/#/msg-detail?msgId=' + item.id + '&type=' + item.type_en_name + '&subType=' + item.sub_type_en_name"></a>
           <div class="company-name" v-html="item.company"></div>
+          <div class="company-name">{{'beijing' | enToCn}}(使用自定义过滤器enToCn)</div>
+          <div class="company-name">{{30 | formatMoney(2, '$')}}(使用自定义过滤器formatMoney)</div>
+          
           <div class="bottom-line">
             <div class="type" v-html="item.type_cn_name"></div>
             <div class="right-part">
@@ -121,6 +124,9 @@
       .title {
         color: #333;
         font-size: 16px;
+        &:hover {
+          color: #0ca0fc;
+        }
       }
 
       .company-name {

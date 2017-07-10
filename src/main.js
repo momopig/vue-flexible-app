@@ -16,6 +16,10 @@ import IScroll from 'iscroll/build/iscroll-probe.js'
 // import IScroll from 'iscroll/build/iscroll-view.js
 // import IScroll from 'iscroll/build/iscroll-zoom.js
 // import IScroll from 'iscroll/build/iscroll-lite.js
+import ES6Promise from 'es6-promise'
+import Filters from './filter.js'
+ES6Promise.polyfill()
+Vue.use(Filters)
 Vue.use(IScrollView, IScroll)
 Vue.use(Mint)
 Vue.use(vueMoment)

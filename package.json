@@ -14,6 +14,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "es6-promise": "^4.1.1",
     "iscroll": "^5.2.0",
     "isomorphic-fetch": "^2.2.1",
     "lib-flexible": "^0.3.2",

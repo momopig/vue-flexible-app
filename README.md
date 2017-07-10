@@ -19,11 +19,13 @@ IScroll为移动端常用的平滑滚动框架，本项目使用其vue封装[vue
 ## isomorphic-fetch
 Fetch api是新一代异步获取网络数据的js接口，在易用性和功能丰富度等方面，都远远超过了传统的ajax，未来将会有更多的人从ajax转向Fetch。由于Fetch api在部分老版本浏览器没有得到支持，在此使用了fetch的Polyfill实现[isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch)。
 ## moment
-[moment](http://momentjs.com)是开源社区十分著名的日期处理类库，用于用于解析、检验、操作、以及显示日期。由于vue2.x版本移除了内置的过滤器（关于作者移除的原因可以参考此讨论：[Bring back filters please](https://github.com/vuejs/vue/issues/2756)）,且本项目中需要使用日期类过滤器，故集成了第三方过滤器[vue-moment](https://www.npmjs.com/package/vue-momentjs)。
+[moment](http://momentjs.com)是开源社区十分著名的日期处理类库，用于用于解析、检验、操作、以及显示日期。由于vue2.x版本移除了内置的过滤器（关于作者移除的原因可以参考此讨论：[Bring back filters please](https://github.com/vuejs/vue/issues/2756)）,且本项目中需要使用日期类过滤器，故集成了第三方过滤器[vue-moment](https://www.npmjs.com/package/vue-momentjs)。与此同时，本项目还配置了自定义过滤器文件src/filter.js，方便你快速增加自定义filter。
 
 
 本demo的页面虽然仅有6个，但是项目的基础框架已经配置得很完善，文件模块的划分亦较为清晰，所以对未来需要额外配置其它js类库或增加新的业务模块，都具也有很强的参考性；而且项目中涉及的vue知识点有：vue常用指令的使用、vue生命周期以及常用hook的使用、vue组件的实例化和重渲染、vue计算属性的使用、vue父子组件间通信、vue成员变量watch监听处理等，有助于帮你快速掌握vue2.x的基本使用。总之，本项目不但是很好的vue入门demo，也能帮助你快速构建高可用的中小型app项目。
 
+＃注意事项
+1. 华为部分手机的内置浏览器不支持flex布局，如果考虑对华为内置浏览器做兼容，建议舍弃flex布局
 
 # Deployment
 
