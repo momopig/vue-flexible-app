@@ -1,7 +1,7 @@
 <template>
     <div class="header-tabs-area">
       <div class="parent-tabs-area">
-        <a class="link-btn icon-collect-link" href="/#/collect-list"></a>
+        <router-link class="link-btn icon-collect-link" to="collect-list"></router-link>
         <ul class="tabs-content">
           <li class="tab-item " v-for="(item, index) in config.parent.arr" v-bind:class="{active: index === config.parent.activeIndex}" >
             <a v-bind:href="item.href">{{ item.name }}</a>

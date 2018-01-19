@@ -10,6 +10,7 @@
 
 <script>
   import { Toast } from 'mint-ui'
+  import router from '../router/index.js'
 //  import AccountService from '../assets/js/fetch_service/account.js'
   export default{
     data () {
@@ -63,7 +64,7 @@
           })
           return
         }
-        window.location.href = '/#/nav-1-list'
+        router.push('/nav-1-list')
       }
     }
   }

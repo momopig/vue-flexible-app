@@ -28,7 +28,7 @@
         loadTabs: false,
         tabConfig: {
           parent: {
-            arr: [{name: '导航一', href: '/#/nav-1-list'}, {name: '导航二', href: '/#/nav-2-list'}],
+            arr: [{name: '导航一', path: 'nav-1-list'}, {name: '导航二', path: 'nav-2-list'}],
             activeIndex: 0
           },
           sub: {

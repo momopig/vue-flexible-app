@@ -24,6 +24,7 @@
 <script>
   import headerReturn from '../components/header-return.vue'
   import { Toast } from 'mint-ui'
+  import router from '../router/index.js'
 //  import AccountService from '../assets/js/fetch_service/account.js'
   export default{
     components: {
@@ -65,7 +66,7 @@
           duration: 3000
         })
         localStorage.removeItem('access_token')
-        window.location.href = '/#/login'
+        router.push('/login')
       }
     }
   }

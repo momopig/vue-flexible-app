@@ -18,7 +18,11 @@ import IScroll from 'iscroll/build/iscroll-probe.js'
 // import IScroll from 'iscroll/build/iscroll-lite.js
 import ES6Promise from 'es6-promise'
 import Filters from './filter.js'
+import Router from 'vue-router'
+
 ES6Promise.polyfill()
+Vue.use(Router)
+Vue.use(router)
 Vue.use(Filters)
 Vue.use(IScrollView, IScroll)
 Vue.use(Mint)

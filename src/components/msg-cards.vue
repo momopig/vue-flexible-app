@@ -3,7 +3,7 @@
       <div v-for="item in msgs">
         <div class="separation-area"></div>
         <div class="msg-item" >
-          <a class="title" v-html="item.title" :href="'/#/msg-detail?msgId=' + item.id + '&type=' + item.type_en_name + '&subType=' + item.sub_type_en_name"></a>
+          <router-link class="title" v-html="item.title" :to="{path: 'msg-detail', query: {type: item.type_en_name, subType: item.sub_type_en_name}}"></router-link>
           <div class="company-name" v-html="item.company"></div>
           <div class="company-name">{{'beijing' | enToCn}}(使用自定义过滤器enToCn)</div>
           <div class="company-name">{{30 | formatMoney(2, '$')}}(使用自定义过滤器formatMoney)</div>
