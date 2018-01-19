@@ -4,7 +4,7 @@
         <router-link class="link-btn icon-collect-link" to="collect-list"></router-link>
         <ul class="tabs-content">
           <li class="tab-item " v-for="(item, index) in config.parent.arr" v-bind:class="{active: index === config.parent.activeIndex}" >
-            <a v-bind:href="item.href">{{ item.name }}</a>
+            <router-link :to="{path: item.path}">{{ item.name }}</router-link>
           </li>
         </ul>
         <a class="link-btn icon-portrait" href="/#/account-detail"></a>
